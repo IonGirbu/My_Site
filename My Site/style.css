@@ -1,0 +1,99 @@
+body{
+    background-image: url(retrowave-neon-sunset-abstract-digital-art-uhdpaper.com-4K-83.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    display: grid;
+    grid-template-columns: auto 400px;
+    grid-template-rows: 200px auto auto 100px;
+    grid-gap: 40px;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "section aside"
+    "footer footer"
+    ;
+  
+}
+header{
+    background-image: url(800px-Twitch_logo_2019.svg.png);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: center center;
+    grid-area: header;
+}
+nav{
+    
+    grid-area: nav; 
+    background-color: rgb(93, 32, 151, 0.7);
+    border-radius: 30px;
+    border: 3px solid  rgb(255, 0, 212);
+    
+    
+}
+nav ul{
+    list-style: none;
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    
+ 
+}
+nav li  {
+    border: 3px solid rgb( 38, 173, 245    );
+    background-color: rgb(71, 15, 147, 0.9) ;
+   -webkit-text-stroke: 1px cyan;
+    text-align: center;
+    margin:5px;
+    font-size: 150%;
+    border-radius: 20px;
+    padding: 6%;
+    color: rgb(255, 255, 255);
+    font-size: 150%;
+  
+    
+}
+nav li:hover {
+    background-color:  rgb(143, 61, 231)
+    ;
+    user-select: none;
+}
+*{
+    text-decoration: none;
+}
+
+aside {
+    
+    grid-area: aside;
+    
+    
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+section{
+    background-color: rgba(255, 255, 255, 0.603);
+    grid-area: section;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 130%;
+    border:2px solid cyan ;
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(230, 0, 238);
+    opacity: 0.6;
+    border:3px solid Cyan;
+    border-radius: 30px;a
+}
+.image{
+    border: 2px solid cyan;
+    width: 400px;
+    height:200px;
+    background-image: url(scale_1200.webp);
+    background-repeat:no-repeat;
+    background-size: 100%;
+    position:sticky;
+    top:50%;
+}
